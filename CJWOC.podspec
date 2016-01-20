@@ -12,18 +12,18 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/frankcjwen/CJWOC"
+  s.homepage     = "https://github.com/frankcjwen/CJWOCLib"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "frank" => "fk911c@gmail.com" }
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/frankcjw/CJWOC.git" }
+  s.source       = { :git => "https://github.com/frankcjw/CJWOCLib.git" }
   s.source_files  = "Classes", "CJWUtilsS/QPLib/**/*.swift", "CJWUtilsS/utils/*.swift", "CJWOC/IDMPhotoBrowser/**/*.*"
   s.exclude_files = "Classes/Exclude"
 
-  s.subspec 'CJWOC' do |ss|
-    ss.source = { :git => 'https://github.com/frankcjw/CJWOC.git'}
-  end
+  #s.subspec 'CJWOC' do |ss|
+    #ss.source = { :git => 'https://github.com/frankcjw/CJWOC.git'}
+  #end
 
   s.subspec 'SDURLCache' do |ss|
     ss.source_files = 'CJWUtils/libs/SDURLCache/*'
